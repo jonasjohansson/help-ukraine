@@ -44,6 +44,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             color:white;
             padding:0.5rem;
             cursor:pointer;
+            text-transform:uppercase;
         }
     </style>
     <div id="${id}">
