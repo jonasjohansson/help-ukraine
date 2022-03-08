@@ -24,19 +24,21 @@ window.addEventListener('DOMContentLoaded', (event) => {
             height:calc(100%-var(--h));
         }
         #${id} div {
-            width:100%;
-            height:50%;
+            left:10%;
             bottom:0;
+            width:80%;
+            height:50%;
             background-color:var(--b);
         }
         #${id}:hover div {
             bottom:unset;
         }
         #${id}:hover div:first-child {
+            top:10%;
             left:50%;
             margin-left:-10%;
             width:20%;
-            height:100%;
+            height:80%;
         }
         #${id}:hover div:last-child {
             top:50%;
