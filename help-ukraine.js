@@ -2,20 +2,27 @@ window.addEventListener('DOMContentLoaded', (event) => {
 	const id = makeid(5)
 	const htmlStr = `
     <style>
-        #${id}{
+        #${id} {
             position:fixed;
+            cursor:pointer;
+            background-color:#3a75c4;
+            z-index:9999;
+        }
+        #${id},
+        #${id} a {
             top:0;
             left:0;
             right:0;
             bottom:0;
-            z-index:9999;
             width:100%;
             height:100%;
-            cursor:pointer;
-            background-color:#3a75c4;
         }
-        #${id} div{
+        #${id},
+        #${id} a,
+        #${id} div {
             position:absolute;
+        }
+        #${id} div {
             width:100%;
             height:50%;
             transition: all 100ms ease-in-out;
@@ -26,13 +33,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             width:20%;
             height:100%;
         }
-        #${id}:hover div:last-child {
-            top:50%;
-            margin-top:calc(-10% + 0.25rem);
-            width:100%;
-            height:20%;
-        }
-        #${id} button{
+        #${id} button {
             position:absolute;
             left:0;
             right:0;
@@ -47,7 +48,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
         <button onclick="remove(${id})">Continue to site</button>
         <a target="_blank" href="https://donate.unhcr.org/int/en/ukraine-emergency" alt="Click to learn more how you can help">
             <div style="background-color:#3a75c4"></div>
-            <div style="background-color:#f9dd16"></div>
         </a>
     </div>`
 	document.body.insertAdjacentHTML('afterbegin', htmlStr)
