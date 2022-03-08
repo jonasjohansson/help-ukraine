@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             position:absolute;
             width:100%;
             height:50%;
-            transitions: all 100ms ease-in-out;
+            transition: all 100ms ease-in-out;
         }
         #${id}:hover div:first-child {
             left:50%;
@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
         #${id}:hover div:last-child {
             top:50%;
-            margin-top:-10%;
+            margin-top:calc(-10% + 0.25rem);
             width:100%;
             height:20%;
         }
@@ -39,7 +39,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             bottom:0;
             background-color:black;
             color:white;
-            padding:1rem;
+            padding:0.5rem;
             cursor:pointer;
         }
     </style>
