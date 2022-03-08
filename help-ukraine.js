@@ -23,13 +23,17 @@ window.addEventListener('DOMContentLoaded', (event) => {
         #${id} div {
             width:100%;
             height:50%;
-            transition: left 100ms ease-in-out, margin-left 100ms ease-in-out, width 100ms ease-in-out;
         }
         #${id}:hover div:first-child {
             left:50%;
             margin-left:-10%;
             width:20%;
             height:100%;
+        }
+        #${id}:hover div:last-child {
+            top:50%;
+            margin-top:-10%;
+            height:20%;
         }
         #${id} button {
             left:0;
@@ -44,6 +48,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     <div id="${id}">
         <button onclick="remove(${id})">Continue to site</button>
         <a target="_blank" href="https://donate.unhcr.org/int/en/ukraine-emergency" alt="Click to learn more how you can help">
+            <div style="background-color:#3a75c4"></div>
             <div style="background-color:#3a75c4"></div>
         </a>
     </div>`
