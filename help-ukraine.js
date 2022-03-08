@@ -12,10 +12,18 @@ window.addEventListener('DOMContentLoaded', (event) => {
             width:100%;
             height:100%;
             cursor:pointer;
+            background-color:#3a75c4;
+        }
+        #${id}:hover div:first-child {
+            width:20%;
+        }
+        #${id}:hover div:last-child {
+            height:20%;
         }
         #${id} div{
             width:100%;
             height:50%;
+            transitions: all 100ms ease-in-out;
         }
         #${id} button{
             position:absolute;
