@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         #${id} div {
             width:100%;
             height:50%;
-            background-color: #3a75c4;
+            background-color: #f9dd16;
         }
         #${id}:hover div:first-child {
             left:50%;
