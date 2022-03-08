@@ -14,6 +14,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
             cursor:pointer;
             background-color:#3a75c4;
         }
+        #${id} div{
+            position:absolute;
+            width:100%;
+            height:50%;
+            transitions: all 100ms ease-in-out;
+        }
         #${id}:hover div:first-child {
             left:50%;
             margin-left:-10%;
@@ -25,12 +31,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
             margin-top:-10%;
             width:100%;
             height:20%;
-        }
-        #${id} div{
-            position:absolute;
-            width:100%;
-            height:50%;
-            transitions: all 100ms ease-in-out;
         }
         #${id} button{
             position:absolute;
