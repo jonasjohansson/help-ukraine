@@ -27,9 +27,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
             height:calc(100%-var(--h));
         }
         #${id} div {
-            left:10%;
             bottom:0;
-            width:80%;
+            width:100%;
             height:50%;
             background-color:var(--b);
         }
@@ -44,8 +43,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
             height:80%;
         }
         #${id}:hover div:last-child {
+            left:10%;
             top:50%;
             margin-top:-10%;
+            width:80%;
             height:20%;
         }
         #${id} button {
