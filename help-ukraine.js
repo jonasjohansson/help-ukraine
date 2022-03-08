@@ -10,6 +10,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
             background-color:var(--y);
             z-index:9999;
             opacity:1!important;
+            display:block!important;
+            visibility:visible!important;
         }
         #${id},
         #${id} * {
