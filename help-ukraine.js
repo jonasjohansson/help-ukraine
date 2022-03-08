@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             <div style="background-color:#f9dd16"></div>
         </a>
     </div>`
-	document.body.insertAdjacentHTML('beforebegin', htmlStr)
+	document.body.insertAdjacentHTML('afterbegin', htmlStr)
 })
 
 function remove(el) {
