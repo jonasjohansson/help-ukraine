@@ -36,17 +36,17 @@ window.addEventListener('DOMContentLoaded', (event) => {
             bottom:unset;
         }
         #${id}:hover div:first-child {
-            top:10%;
-            left:50%;
+            top:10vh;
+            left:50vw;
             margin-left:-10vh;
             width:20vh;
-            height:80%;
+            height:80vh;
         }
         #${id}:hover div:last-child {
-            left:10%;
             top:50%;
-            margin-top:-10%;
-            width:80%;
+            left:calc(50vw - 40vh);
+            margin-top:-10vh;
+            width:80vh;
             height:20vh;
         }
         #${id} button {
