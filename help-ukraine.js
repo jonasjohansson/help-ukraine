@@ -3,10 +3,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
 	const htmlStr = `
     <style>
         #${id} {
-            position:fixed;
             cursor:pointer;
             background-color:#3a75c4;
             z-index:9999;
+        }
+        #${id},
+        #${id} * {
+            position:fixed;
         }
         #${id},
         #${id} a {
@@ -16,11 +19,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
             bottom:0;
             width:100%;
             height:100%;
-        }
-        #${id},
-        #${id} a,
-        #${id} div {
-            position:absolute;
         }
         #${id} div {
             width:100%;
@@ -34,7 +32,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
             height:100%;
         }
         #${id} button {
-            position:absolute;
             left:0;
             right:0;
             bottom:0;
