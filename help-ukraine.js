@@ -23,6 +23,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         #${id} div {
             width:100%;
             height:50%;
+            background-color: #3a75c4;
         }
         #${id}:hover div:first-child {
             left:50%;
@@ -46,11 +47,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
     </style>
     <div id="${id}">
-        <button onclick="remove(${id})">Continue to site</button>
         <a target="_blank" href="https://donate.unhcr.org/int/en/ukraine-emergency" alt="Click to learn more how you can help">
-            <div style="background-color:#3a75c4"></div>
-            <div style="background-color:#3a75c4"></div>
+            <div></div>
+            <div></div>
         </a>
+        <button onclick="remove(${id})">Continue to site</button>
     </div>`
 	document.body.insertAdjacentHTML('afterbegin', htmlStr)
 })
