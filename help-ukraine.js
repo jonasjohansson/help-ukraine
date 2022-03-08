@@ -3,8 +3,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
 	const htmlStr = `
     <style>
         #${id} {
+            --b:#3a75c4;
+            --y:#f9dd16;
             cursor:pointer;
-            background-color:#3a75c4;
+            background-color:var(--y);
             z-index:9999;
         }
         #${id},
@@ -23,7 +25,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
         #${id} div {
             width:100%;
             height:50%;
-            background-color: #f9dd16;
+            bottom:0;
+            background-color:var(--b);
+        }
+        #${id}:hover div {
+            bottom:unset;
         }
         #${id}:hover div:first-child {
             left:50%;
