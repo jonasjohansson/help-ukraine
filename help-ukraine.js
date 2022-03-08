@@ -15,12 +15,19 @@ window.addEventListener('DOMContentLoaded', (event) => {
             background-color:#3a75c4;
         }
         #${id}:hover div:first-child {
+            left:50%;
+            margin-left:-10%;
             width:20%;
+            height:100%;
         }
         #${id}:hover div:last-child {
+            top:50%;
+            margin-top:-10%;
+            width:100%;
             height:20%;
         }
         #${id} div{
+            position:absolute;
             width:100%;
             height:50%;
             transitions: all 100ms ease-in-out;
