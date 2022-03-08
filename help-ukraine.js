@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         #${id} {
             --b:#3a75c4;
             --y:#f9dd16;
+            --h:1rem;
             cursor:pointer;
             background-color:var(--y);
             z-index:9999;
@@ -20,7 +21,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             right:0;
             bottom:0;
             width:100%;
-            height:100%;
+            height:calc(100%-var(--h));
         }
         #${id} div {
             width:100%;
@@ -48,7 +49,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             bottom:0;
             background-color:black;
             color:white;
-            padding:0.5rem;
+            line-height:var(--h);
             cursor:pointer;
             text-transform:uppercase;
         }
