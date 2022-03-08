@@ -38,8 +38,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
         #${id}:hover div:first-child {
             top:10%;
             left:50%;
-            margin-left:-10%;
-            width:20%;
+            margin-left:-10vh;
+            width:20vh;
             height:80%;
         }
         #${id}:hover div:last-child {
@@ -47,7 +47,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             top:50%;
             margin-top:-10%;
             width:80%;
-            height:20%;
+            height:20vh;
         }
         #${id} button {
             left:0;
