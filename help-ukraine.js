@@ -2,13 +2,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
 	const id = makeid(5)
 	const htmlStr = `
     <style>
-        #${id} {
+        html #${id} {
             --b:#3a75c4;
             --y:#f9dd16;
             --h:1rem;
             cursor:pointer;
             background-color:var(--y);
             z-index:9999;
+            opacity:1!important;
         }
         #${id},
         #${id} * {
